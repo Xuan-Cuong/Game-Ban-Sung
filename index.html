@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Babylon.js FPS</title> <!-- Đổi title -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Nhúng thư viện Babylon.js -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <!-- Có thể cần loaders nếu dùng model phức tạp sau này -->
+    <!-- <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script> -->
+</head>
+<body>
+    <!-- Canvas nơi Babylon.js sẽ vẽ -->
+    <canvas id="renderCanvas"></canvas>
+
+    <!-- Overlay đơn giản cho điểm và thông báo -->
+    <div id="ui-container">
+        <div id="score">Score: 0</div>
+        <!-- Thêm crosshair đơn giản -->
+        <div id="crosshair">+</div>
+        <div id="instructions" style="display: block; bottom: 10px; left: 10px; background: rgba(0,0,0,0.6); padding: 5px;">Click để khóa chuột | WASD: Di chuyển | Chuột: Nhìn | Click trái: Bắn | ESC: Mở khóa chuột</div>
+        <div id="gameOver" style="display: none;">HẾT MỤC TIÊU!<br>Nhấn F5 để chơi lại</div>
+    </div>
+
+    <!-- Nhúng file script game của bạn -->
+    <script src="script.js"></script>
+</body>
+</html>
